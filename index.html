@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WaveChem - Student Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('images/chemistry-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #fff;
+            text-shadow: 2px 2px 8px #000;
+            margin-bottom: 50px;
+        }
+
+        .description-box {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #2c3e50;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .class-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .class-buttons a {
+            text-decoration: none;
+            padding: 20px 40px;
+            border-radius: 12px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .class11 { background-color: #e74c3c; }
+        .class12 { background-color: #3498db; }
+        .jee { background-color: #f1c40f; color: #000; }
+        .neet { background-color: #2ecc71; }
+
+        .class-buttons a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .login-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            padding: 12px 25px;
+            background-color: #8e44ad;
+            color: #fff;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #732d91;
+        }
+    </style>
+</head>
+<body>
+    <a href="/admin/login" class="login-btn">Admin Login</a>
+    <div class="container">
+        <h1>WaveChem</h1>
+
+        <div class="description-box">
+            Chemistry is often called the “central science” because it connects and explains so many aspects of the natural world. 
+            It helps us understand the composition, structure, and properties of matter, as well as the changes it undergoes during reactions. 
+            From the food we eat and the medicines we take to the materials we use in technology, chemistry plays a vital role in improving our daily lives.
+        </div>
+
+        <div class="class-buttons">
+            <a href="/student/materials/11" class="class11">Class 11</a>
+            <a href="/student/materials/12" class="class12">Class 12</a>
+            <a href="/student/materials/jee" class="jee">JEE</a>
+            <a href="/student/materials/neet" class="neet">NEET</a>
+        </div>
+    </div>
+</body>
+</html>
